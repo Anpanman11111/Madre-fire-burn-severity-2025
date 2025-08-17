@@ -5,7 +5,7 @@
   // Post-fire: 2025-07-26 → 2025-08-26
   // Imagery actually used: up to 2025-08-17 (limited by current data availability as of run date). 
     // Results may shift slightly if rerun later as new imagery becomes available.
-// Note: Replace the perimeter asset ID with your own if needed (see given GEE asset in repo)
+// Note: Import the fire perimeter asset given in README.md and replace the FeatureCollection ID with your own first before running
 // MIT License
 
 
