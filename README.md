@@ -6,7 +6,7 @@ This project uses Sentinel-2 satellite imagery to map the areas in California af
 - dNBR thresholds for severity categories: Key, C. H., & Benson, N. C. (2006) https://www.researchgate.net/publication/241687027_Landscape_Assessment_Ground_measure_of_severity_the_Composite_Burn_Index_and_Remote_sensing_of_severity_the_Normalized_Burn_Ratio
 - Madre fire perimeter shapefile: 
   - CAL FIRE WFIGS 2025 Wildfire Perimeters (Source): https://hub-calfire-forestry.hub.arcgis.com/datasets/wfigs-2025-wildfire-perimeters/explore?location=36.130988%2C-119.597803%2C6.71
-  - As GEE asset (To be imported before running the GEE code): https://code.earthengine.google.com/?asset=projects/gee-projects-466712/assets/CAL_fire_perimeter
+  - As GEE fire perimeter asset (To be imported before running GEE_code.js): https://code.earthengine.google.com/?asset=projects/gee-projects-466712/assets/CAL_fire_perimeter
 - Harmonized Sentinel-2 data: European Space Agency (ESA) & Copernicus Program. Imported from EE data catalog (ID: 'COPERNICUS/S2_HARMONIZED')
 - Google’s Cloud Score+ Mask: Google Earth Engine Team. Imported from EE data catalog (ID: 'GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED')
 
