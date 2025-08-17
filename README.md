@@ -8,7 +8,7 @@ This project uses Sentinel-2 satellite imagery to map the areas in California af
   - CAL FIRE WFIGS 2025 Wildfire Perimeters (Source): https://hub-calfire-forestry.hub.arcgis.com/datasets/wfigs-2025-wildfire-perimeters/explore?location=36.130988%2C-119.597803%2C6.71
   - As GEE asset: https://code.earthengine.google.com/?asset=projects/gee-projects-466712/assets/CAL_fire_perimeter
 - Harmonized Sentinel-2 data: European Space Agency (ESA) & Copernicus Program. Imported from EE data catalog (ID: 'COPERNICUS/S2_HARMONIZED')
-- Google’s Cloud Score+ Mask: Google Earth Engine Team. Imported from EE data catalog (ID: "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED")
+- Google’s Cloud Score+ Mask: Google Earth Engine Team. Imported from EE data catalog (ID: 'GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED')
 
 ## Tools used:
 - Google Earth Engine (JavaScript API)
