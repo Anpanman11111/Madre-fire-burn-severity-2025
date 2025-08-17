@@ -46,7 +46,7 @@ This project uses Sentinel-2 satellite imagery to map the areas in California af
 - 3 TIFFs: before_fire composite, after_fire composite, severity_composite
 - 3 PNGs of the composites
 - 1 list containing area (km²) in each class
-- JavaScript code from GEE code editor
+- JavaScript code from GEE code editor: https://code.earthengine.google.com/53cb706ede39d32f352840fd4eff4477
 
 ## Results:
 | Severity Class   | dNBR Range       | Colour   | Area (km²) |
@@ -58,6 +58,7 @@ This project uses Sentinel-2 satellite imagery to map the areas in California af
 | High Severity (4)    | ≥ 0.660           | Magenta  | 0.01       |
 
 ## Notes:
+- TIFF and PNG outputs are included in a separate folder
 - This project is licensed under the MIT License
 
 
