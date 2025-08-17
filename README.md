@@ -9,3 +9,19 @@ This project uses Sentinel-2 satellite imagery to map the areas in California af
   - As GEE asset: https://code.earthengine.google.com/?asset=projects/gee-projects-466712/assets/CAL_fire_perimeter
 - Harmonized Sentinel-2 data: European Space Agency (ESA) & Copernicus Program. Imported from EE data catalog (ID: 'COPERNICUS/S2_HARMONIZED')
 - Google’s Cloud Score+ Mask: Google Earth Engine Team. Imported from EE data catalog (ID: "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED")
+
+## Tools used:
+- Google Earth Engine (JavaScript API)
+
+## Steps:
+### Data Acquisition
+- Used CAL FIRE website to gather general information of the Madre fire, including fire start date, fire end date, and area affected (km²).
+- Downloaded the Madre fire perimeter shapefile from CAL FIRE WFIGS 2025 Wildfire Perimeters. Imported it as a FeatureCollection and used it to create a geometry of the Area of Interest (AOI).
+- Imported COPERNICUS/S2_HARMONIZED ImageCollection and filter it using the acquired AOI geometry to only include Sentinel-2 images within the fire perimeter.
+### Data Pre-Processing
+- Imported GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED ImageCollection and linked it to the Sentinel-2 ImageCollection. Applied a cloud-masking function that retained only pixels with a CS+ cloud score ≥ 0.6.
+- Used the fire dates to filter the cloud-masked Sentinel-2 ImageCollection into 2 sub-ImageCollections:
+  - before-fire: Images from 1 month before the fire up to the fire start date.
+  - after-fire: Images from the fire end date up to 1 month after the fire.
+- Made median composites from the 2 sub-ImageCollections clipped to the AOI geometry. This is to visualize and compare the landscape before and after the fire.
+
